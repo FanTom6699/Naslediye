@@ -1,0 +1,57 @@
+{
+  "mapSize": 25,
+  "objects": [
+    {
+      "id": "castle_1",
+      "type": "castle",
+      "name": "Замок Севера",
+      "owner": "Player_A",
+      "x": 10,
+      "y": 5
+    },
+    {
+      "id": "village_1",
+      "type": "village",
+      "name": "Деревня Речная",
+      "owner": "NPC",
+      "x": 15,
+      "y": 12
+    },
+    {
+      "id": "resource_wood_1",
+      "type": "resource",
+      "resource": "wood",
+      "amount": 120,
+      "name": "Лесной участок",
+      "x": 4,
+      "y": 19
+    },
+    {
+      "id": "resource_stone_1",
+      "type": "resource",
+      "resource": "stone",
+      "amount": 90,
+      "name": "Каменный карьер",
+      "x": 20,
+      "y": 8
+    },
+    {
+      "id": "resource_iron_1",
+      "type": "resource",
+      "resource": "iron",
+      "amount": 80,
+      "name": "Железная жила",
+      "x": 7,
+      "y": 14
+    },
+    {
+      "id": "resource_food_1",
+      "type": "resource",
+      "resource": "food",
+      "amount": 100,
+      "name": "Плодородные поля",
+      "x": 2,
+      "y": 3
+    }
+  ]
+}
