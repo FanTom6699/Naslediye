@@ -1,0 +1,22 @@
+[Unit]
+Description=TradingView Signal Telegram Bot
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=tvbot
+Group=tvbot
+WorkingDirectory=/opt/tradingview-signal-bot
+Environment=PYTHONUNBUFFERED=1
+EnvironmentFile=/opt/tradingview-signal-bot/.env
+ExecStart=/opt/tradingview-signal-bot/.venv/bin/python /opt/tradingview-signal-bot/bot.py
+Restart=always
+RestartSec=5
+TimeoutStopSec=20
+KillSignal=SIGINT
+NoNewPrivileges=true
+UMask=0077
+
+[Install]
+WantedBy=multi-user.target
